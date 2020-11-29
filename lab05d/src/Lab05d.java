@@ -12,7 +12,6 @@ import java.util.Scanner;
  */ 
 
 public class Lab05d
-
 {
     public static void main(String[] args)
     {

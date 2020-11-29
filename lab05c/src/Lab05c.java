@@ -19,22 +19,25 @@ public class Lab05c
         
         // constants
         final String SEPARATOR = "------------------";                
-        final String OPERATION_TYPES  = " +,-,*,/ value";
+        final String OPERATION_TYPES = "+,-,*,/ value";
         final String CLEAR = "Clear";
         final String QUIT = "Quit";
-        final String SELECT = "Select:  ";
+        final String SELECT = "Select: ";
 
         // variables
         double result;
         String operation;
         double value_given;
         
-        // Program Code
+        // program code
         System.out.println("Welcome to \"SimpleCalc\"...");
         System.out.println();
+
+        // initializing variables
         result = 0;
         value_given = 0;
         
+        // loop while condition is true
         while (true)  {
 
             System.out.println(SEPARATOR);
@@ -85,6 +88,7 @@ public class Lab05c
         
         // close scanner instance
         scan.close();
+
     }
     
 }

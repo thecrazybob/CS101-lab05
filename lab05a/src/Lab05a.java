@@ -28,15 +28,15 @@ public class Lab05a
         do {
 
             // prompt user for width
-            System.out.println("Please enter the width: ");
+            System.out.println("Please enter the width:");
             width = scan.nextInt();
             
             // prompt user for height
-            System.out.println("Please enter the height: ");
+            System.out.println("Please enter the height:");
             height = scan.nextInt();
             
             // prompt user for thickness
-            System.out.println("Please enter the thickness: ");
+            System.out.println("Please enter the thickness:");
             thickness = scan.nextInt();
 
             // verify if the value is positive/valid
@@ -95,21 +95,25 @@ public class Lab05a
             // prompt for re-running the program
             System.out.println("Do You Want To Repeat?");
 
+            // get user response
             repeat = scan.next().charAt(0);
             
+            // if the user decided to cotinue/repeat
             if (repeat == 'y' || repeat == 'Y') {
                 decision = true;
             }
 
+            // user decided not to continue/repeat
             else {                                          
                 decision = false;   
-                System.out.println("goodbye");
+                System.out.println("Goodbye!");
             }
 
         }
 
         while (decision);
 
+        // close scanner instance
         scan.close();
 
     }
