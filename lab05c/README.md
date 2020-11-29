@@ -1,14 +1,43 @@
-## Getting Started
+(c) Design and implement a Simple Calculator program. The program should present a menu to the user, allowing them to select any of the basic arithmetic operations "+", "-", "*", "/", as well as "Clear" and "Quit". Like most simple hand-held calculators, it should display the current (accumulator) result. The user will enter their selected operation and, if appropriate, a value. The program should apply the specified operation and value to the result, and re-display it and the menu, only stopping when the user selects "Quit". An example interaction is shown below (user entries are shown in bold red, the "result" display --between the dashed lines-- in green):
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Welcome to "SimpleCalc"...
 
-## Folder Structure
+------------------
+[ 0.0 ]
+------------------
+  +,-,*,/ value
+  Clear
+  Quit
+------------------
+Select: + 25.0
 
-The workspace contains two folders by default, where:
+------------------
+[ 25.0 ]
+------------------
+  +,-,*,/ value
+  Clear
+  Quit
+------------------
+Select: / 4
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+------------------
+[ 6.25 ]
+------------------
+  +,-,*,/ value
+  Clear
+  Quit
+------------------
+Select: Clear
 
-## Dependency Management
+------------------
+[ 0.0 ]
+------------------
+  +,-,*,/ value
+  Clear
+  Quit
+------------------
+Select: q
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Thanks for using "SimpleCalc", goodbye.
+Note: you should read the operation as a word (String), allowing it to accept single character commands as well as the full ones (i.e. "Clear", "clear", "C" and "c" should all work nicely). The user will have to enter a space between the arithmetic operator and the value, however.
+
