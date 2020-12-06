@@ -93,7 +93,7 @@ public class Lab05a
             }
             
             // prompt for re-running the program
-            System.out.println("Do You Want To Repeat?");
+            System.out.println("Do you want to repeat?");
 
             // get user response
             repeat = scan.next().charAt(0);
